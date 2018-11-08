@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+
 @end
 
 @implementation ViewController
