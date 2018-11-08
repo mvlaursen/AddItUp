@@ -311,7 +311,7 @@
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="fjM-8J-ptY">
-                                <rect key="frame" x="16" y="20" width="288" height="142"/>
+                                <rect key="frame" x="28" y="20" width="264" height="142"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -322,9 +322,9 @@
                             <constraint firstItem="L9I-m1-tYA" firstAttribute="top" secondItem="fjM-8J-ptY" secondAttribute="bottom" constant="8" id="KBJ-d4-Gc3"/>
                             <constraint firstItem="L9I-m1-tYA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oi6-lN-j8r"/>
                             <constraint firstItem="fjM-8J-ptY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PVm-7T-TyO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fjM-8J-ptY" secondAttribute="trailing" constant="16" id="VgE-Lu-n6W"/>
+                            <constraint firstItem="fjM-8J-ptY" firstAttribute="width" secondItem="L9I-m1-tYA" secondAttribute="width" id="Yzm-Jr-SXy"/>
+                            <constraint firstItem="fjM-8J-ptY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ftv-Z7-yDk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L9I-m1-tYA" secondAttribute="bottom" constant="20" id="hAW-CL-0mK"/>
-                            <constraint firstItem="fjM-8J-ptY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vEz-kb-VES"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
