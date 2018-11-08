@@ -25,9 +25,14 @@
 }
 
 - (IBAction)onClearTapped:(UIButton *)sender {
+    _addends = [[NSArray alloc] init];
+    _addend = nil;
+    [self updateDisplay];
 }
 
 - (IBAction)onClearEntryTapped:(UIButton *)sender {
+    _addend = nil;
+    [self updateDisplay];
 }
 
 - (IBAction)onDigitTapped:(UIButton *)sender {
