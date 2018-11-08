@@ -61,16 +61,23 @@
 
 - (void)updateDisplay {
     NSString *displayText = @"";
+    int total = 0;
     
     for (id addend in _addends) {
         NSNumber *addendValue = (NSNumber *)addend;
         displayText = [displayText stringByAppendingString:addendValue.stringValue];
         displayText = [displayText stringByAppendingString:@"\n"];
+        total += [addend intValue];
     }
     
     if (_addend) {
         displayText = [displayText stringByAppendingString:_addend.stringValue];
         displayText = [displayText stringByAppendingString:@"\n"];
+    }
+    
+    if (_addends.count > 0) {
+        displayText = [displayText stringByAppendingString:@"--------\n"];
+        displayText = [displayText stringByAppendingString:[[NSNumber numberWithInt:total] stringValue]];
     }
     
     [_textView setText:displayText];
