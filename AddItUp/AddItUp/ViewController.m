@@ -19,5 +19,19 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)onClearTapped:(UIButton *)sender {
+}
+
+- (IBAction)onClearEntryTapped:(UIButton *)sender {
+}
+
+- (IBAction)onDigitTapped:(UIButton *)sender {
+}
+
+- (IBAction)onMinusTapped:(UIButton *)sender {
+}
+
+- (IBAction)onPlusTapped:(UIButton *)sender {
+}
 
 @end
