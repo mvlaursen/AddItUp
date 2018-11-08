@@ -51,7 +51,7 @@
 #pragma mark - Utility
 
 - (void)addAddendToAddends {
-    if (_addend) {
+    if (_addend && _addend.intValue != 0) {
         NSMutableArray *addendsMutable = [NSMutableArray arrayWithArray:_addends];
         [addendsMutable addObject:_addend];
         _addends = addendsMutable;
@@ -71,12 +71,20 @@
     }
     
     if (_addend) {
+        displayText = [displayText stringByAppendingString:@"> "];
         displayText = [displayText stringByAppendingString:_addend.stringValue];
         displayText = [displayText stringByAppendingString:@"\n"];
     }
     
     if (_addends.count > 0) {
-        displayText = [displayText stringByAppendingString:@"--------\n"];
+        int numDashes = 1;
+        if (total != 0) {
+            numDashes = ceil(log10(abs(total)));
+        }
+        for (int iDash = 0; iDash < numDashes; iDash++) {
+            displayText = [displayText stringByAppendingString:@"-"];
+        }
+        displayText = [displayText stringByAppendingString:@"\n"];
         displayText = [displayText stringByAppendingString:[[NSNumber numberWithInt:total] stringValue]];
     }
     
