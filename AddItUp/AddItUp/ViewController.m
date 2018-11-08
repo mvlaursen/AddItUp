@@ -60,8 +60,8 @@
         NSMutableArray *addendsMutable = [NSMutableArray arrayWithArray:_addends];
         [addendsMutable addObject:_addend];
         _addends = addendsMutable;
-        _addend = nil;
     }
+    _addend = nil;
 }
 
 - (void)updateDisplay {
